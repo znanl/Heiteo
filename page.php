@@ -12,22 +12,6 @@
 <article itemscope role="article" class="post post tag-getting-started">
   <section class="post-container">
     <header class="post-header">
-      <ul class="post-meta-list">
-        <li class="post-meta-item">
-          <time datetime="<?php $this->date("Y-m-d H:i:s"); ?>" itemprop="datePublished">
-            <?php $this->date("Y-m-d H:i:s"); ?>
-          </time>
-        </li>
-        <li class="post-meta-item">
-          <?php $this->tags(' & ', true, 'none'); ?>
-        </li>
-        <li class="post-meta-item">
-          <?php $this->category(' & '); ?>
-        </li>
-        <li class="post-meta-item">
-          <?php $this->commentsNum('%d 个评论'); ?>
-        </li>
-      </ul>
       <h1 itemprop="name headline" class="post-title"><a href="<?php $this->permalink(); ?>" itemprop="url" data-pjax title="<?php $this->title(); ?>">
         <?php $this->title(); ?>
         </a></h1>
@@ -51,11 +35,10 @@
   </section>
   <section itemprop="comment" class="post-comments">
     <div id="disqus_thread">
-	<?php if (!empty($this->options->duoshuo) && in_array('PageShowDuoshuo', $this->options->duoshuo)): ?>
-	<?php include('comments.php'); ?>
-	<?php endif; ?>
-	</div>
+      <?php if (!empty($this->options->duoshuo) && in_array('PageShowDuoshuo', $this->options->duoshuo)): ?>
+      <?php include('comments.php'); ?>
+      <?php endif; ?>
+    </div>
   </section>
 </article>
 <?php $this->need('footer.php'); ?>
-

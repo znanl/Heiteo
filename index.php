@@ -35,7 +35,15 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
       <h2 itemprop="name" class="post-item-title"> <a href="<?php $this->permalink(); ?>" itemprop="url" data-pjax title="Welcome to Ghost"><?php $this->title(); ?></a> </h2>
     </header>
     <section itemprop="description" class="post-item-excerpt">
-      <p><?php $this->content('查看全文...'); ?></p>
+      <p>
+	  <?php if (!empty($this->options->more) && in_array('MoreStatus', $this->options->more)): ?>
+      <?php if ($this->options->moretext == ''):?>
+	  <?php $this->content('查看全文...'); ?>
+      <?php else :?>
+      <?php $moretext = $this->options->moretext;$this->content($moretext); ?>
+      <?php endif; ?>
+      <?php endif; ?>
+      </p>
     </section>
     <footer class="post-item-footer">
       <ul class="post-item-meta-list">
