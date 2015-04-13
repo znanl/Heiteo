@@ -50,13 +50,7 @@
     </div>
   </section>
   <section itemprop="comment" class="post-comments">
-    <div id="disqus_thread">
-	
-	<?php if (!empty($this->options->duoshuo) && in_array('PostShowDuoshuo', $this->options->duoshuo)): ?>
-	<?php include('comments.php'); ?>
-	<?php endif; ?>
-	
-	</div>
+    <div id="disqus_thread"></div>
   </section>
 </article>
 <?php $this->need('footer.php'); ?>
