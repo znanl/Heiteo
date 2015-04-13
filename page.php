@@ -1,6 +1,6 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
-<body class="<?php $this->options->sidebarstyle(); ?>">
+<body class="post-template tag-getting-started">
 <?php $this->need('sidebar.php'); ?>
 <div class="drawer-overlay"></div>
 <main id="container" role="main" class="container">
