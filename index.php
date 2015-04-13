@@ -4,7 +4,7 @@
  * 
  * @package Typecho Heiteo Theme 
  * @author nyf.pw
- * @version 0.1
+ * @version 1.3
  * @link http://nyf.pw/
  */
 
