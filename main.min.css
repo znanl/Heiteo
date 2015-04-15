@@ -2013,16 +2013,17 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	margin: 0
 }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-	font-family: "Open Sans", "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	font-family: "微软雅黑", Arial, sans-serif;
 	font-weight: 700;
-	word-wrap: break-word
+	white-space:nowrap; //强制不换行 
 }
 h1, .h1 {
-	font-size: 48.5px;
+	font-size: 36.5px;
 	text-indent: -2px;
 	letter-spacing: -1px;
 	line-height: 1.2;
 	font-family: "微软雅黑", Arial, sans-serif;
+	max-width: 1000px;
 }
 
 @media only screen and (max-width:767px) {
@@ -2385,7 +2386,8 @@ display:none
 	border-bottom: 0
 }
 .post-item-title {
-	line-height: 1.1
+	line-height: 1.1;
+	margin-bottom: 10px;
 }
 .post-item-title a {
 	text-decoration: none
