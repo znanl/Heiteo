@@ -1,6 +1,6 @@
 <?php $this->need('header.php'); ?>
 
-<body class="post-template tag-getting-started">
+<body class="<?php if ($this->options->siderbar() == TRUE)) {echo 'post-template tag-getting-started  pace-done drawer-open drawer-transition';} else {echo 'post-template tag-getting-started pace-done';} ?>">
 <?php $this->need('sidebar.php'); ?>
 <div class="drawer-overlay"></div>
 <main id="container" role="main" class="container">
@@ -40,7 +40,7 @@
           <?php $this->author(); ?>
           </a>
           <p class="post-author-bio">
-            <?php $this->options->description() ?>
+            <?php $this->options->description(); ?>
           </p>
         </div>
       </div>

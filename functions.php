@@ -27,5 +27,8 @@ function themeConfig($form) {
 	//设置首页查看更多的文字
     $moretext = new Typecho_Widget_Helper_Form_Element_Text('moretext', NULL, NULL, _t('【查看全文】样式'), _t('设置首页【查看全文】的文字，为空则为默认的【查看全文】。'));
     $form->addInput($moretext);
+	//设置侧边栏状态
+	$siderbar = new Typecho_Widget_Helper_Form_Element_Radio('siderbar',array('显示','隐藏'),array(1,0), _t('设置侧边栏状态的默认状态'));
+    $form->addInput($siderbar->multiMode());
 }
 ?>

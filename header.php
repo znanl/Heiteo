@@ -23,7 +23,6 @@
     <?php $this->header(); ?>
     <script src="<?php $this->options->themeUrl('head-scripts.min.js'); ?>"></script>
     <link rel="canonical" href="<?php $this->permalink(); ?>" />
-    <?php $this->header(); ?>
     <script type="text/javascript">
       window.GHOSTIUM = {};
       GHOSTIUM.haveGA = typeof ga_ua !== 'undefined' && ga_ua !== 'UA-XXXXX-X';
