@@ -1,6 +1,6 @@
 <?php $this->need('header.php'); ?>
 
-<body class="<?php if ($this->options->siderbar() == TRUE)) {echo 'post-template tag-getting-started  pace-done drawer-open drawer-transition';} else {echo 'post-template tag-getting-started pace-done';} ?>">
+<body class="<?php if ($this->options->siderbar == 0) {echo 'post-template tag-getting-started  pace-done drawer-open drawer-transition';} else {echo 'post-template tag-getting-started pace-done';} ?>">
 <?php $this->need('sidebar.php'); ?>
 <div class="drawer-overlay"></div>
 <main id="container" role="main" class="container">

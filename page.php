@@ -1,7 +1,6 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
-<body class="post-template tag-getting-started">
-<?php $this->need('sidebar.php'); ?>
+<body class="<?php if ($this->options->siderbar == 0) {echo 'post-template tag-getting-started  pace-done drawer-open drawer-transition';} else {echo 'post-template tag-getting-started pace-done';} ?>"><?php $this->need('sidebar.php'); ?>
 <div class="drawer-overlay"></div>
 <main id="container" role="main" class="container">
 <div class="surface">
