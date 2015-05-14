@@ -19,9 +19,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('main.min.css'); ?>"/>
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('/css/main.min.css'); ?>"/>
     <?php $this->header(); ?>
-    <script src="<?php $this->options->themeUrl('head-scripts.min.js'); ?>"></script>
+    <script src="<?php $this->options->themeUrl('/js/head-scripts.min.js'); ?>"></script>
     <link rel="canonical" href="<?php $this->permalink(); ?>" />
     <script type="text/javascript">
       window.GHOSTIUM = {};

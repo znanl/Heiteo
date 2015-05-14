@@ -9,6 +9,6 @@
 </div>
 </div>
 </main>
-<script src="<?php $this->options->themeUrl('jquery.js'); ?>"></script> 
-<script src="<?php $this->options->themeUrl('foot-scripts.min.js'); ?>"></script>
+<script src="<?php $this->options->themeUrl('/js/jquery.js'); ?>"></script> 
+<script src="<?php $this->options->themeUrl('/js/foot-scripts.min.js'); ?>"></script>
 </body></html>
